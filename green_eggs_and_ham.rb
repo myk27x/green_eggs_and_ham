@@ -15,6 +15,9 @@ class GreenEggsAndHam
            sort
   end
 
-  def number_of_words_shorter_than
+  def number_of_words_shorter_than(number)
+    @words.map { |word| word.downcase.gsub(/[.!?,]/, "")}.
+           select { |word| word.length < (number)}.
+           count
   end
 end
