@@ -5,7 +5,11 @@ class GreenEggsAndHam
   end
 
   def word_count
-    @words = @text.split(" ")
+    @words = @text.split
     @words.count
+  end
+
+  def sorted_unique_words
+    
   end
 end
