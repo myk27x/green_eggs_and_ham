@@ -22,6 +22,6 @@ class GreenEggsAndHam
   end
 
   def longest_word
-    
+    @words.max_by { |word| word.length }
   end
 end
