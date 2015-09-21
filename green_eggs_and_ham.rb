@@ -24,4 +24,8 @@ class GreenEggsAndHam
   def longest_word
     @words.max_by { |word| word.length }
   end
+
+  def frequency_of_unique_words
+    
+  end
 end
