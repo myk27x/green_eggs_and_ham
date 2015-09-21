@@ -14,4 +14,7 @@ class GreenEggsAndHam
            uniq.
            sort
   end
+
+  def number_of_words_shorter_than
+  end
 end
