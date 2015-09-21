@@ -20,4 +20,8 @@ class GreenEggsAndHam
            select { |word| word.length < (number)}.
            count
   end
+
+  def longest_word
+    
+  end
 end
