@@ -5,5 +5,7 @@ class GreenEggsAndHam
   end
 
   def word_count
+    @words = @text.split(" ")
+    @words.count
   end
 end
