@@ -27,4 +27,8 @@ class GreenEggsAndHam
                   map { |word, frequency| [word, frequency.count] }.
                   to_h
   end
+
+  def stanzas
+    @text.split(/\n\n/)
+  end
 end
