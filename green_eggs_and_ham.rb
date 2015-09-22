@@ -29,6 +29,6 @@ class GreenEggsAndHam
   end
 
   def stanzas
-    @text.split(/\n\n/)
+    
   end
 end
