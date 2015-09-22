@@ -31,4 +31,9 @@ class GreenEggsAndHam
   def stanzas
     @text.split(/\n\n/)
   end
+
+  def lines
+    lines = @text.split(/\n/).
+                  delete_if { |line| line == "" }
+  end
 end
