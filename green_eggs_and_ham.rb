@@ -36,4 +36,12 @@ class GreenEggsAndHam
     lines = @text.split(/\n/).
                   delete_if { |line| line == "" }
   end
+
+  def punctuation_count
+    chars = @text.split(//).
+                  map { |word| word.gsub(/[A-Z a-z \n]/, "") }.
+                  reject { |word| word == "" }.count
+
+    # p punct
+  end
 end
