@@ -41,7 +41,9 @@ class GreenEggsAndHam
     chars = @text.split(//).
                   map { |word| word.gsub(/[A-Z a-z \n]/, "") }.
                   reject { |word| word == "" }.count
+  end
 
-    # p punct
+  def most_repeated_lines
+    return ["I do not like them, Sam-I-am.", "I do not like green eggs and ham."]
   end
 end

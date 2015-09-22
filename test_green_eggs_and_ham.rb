@@ -57,6 +57,16 @@ class GreenEggsAndHamTest < MiniTest::Test
     # skip
     assert_equal 29, @book.punctuation_count
   end
+
+  def test_09_line_appears_most_in_text
+    # skip
+    expected = [
+                "I do not like them, Sam-I-am.",
+                "I do not like green eggs and ham."
+               ]
+    assert_equal expected, @book.most_repeated_lines
+  end
+
   def self.test_order
     :alpha
   end
